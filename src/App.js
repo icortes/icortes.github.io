@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AppBar from './components/AppBar';
-import Home from './pages/Home';
+import AboutMe from './pages/AboutMe';
 
 function App() {
   return (
     <Router>
       <AppBar />
       <Routes>
-        <Route exact path='/' component={<Home />} />
+        <Route exact path='/' component={<AboutMe />} />
       </Routes>
     </Router>
   );
