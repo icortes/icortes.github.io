@@ -7,7 +7,7 @@ function App() {
     <Router>
       <AppBar />
       <Routes>
-        <Route exact path='/' component={<AboutMe />} />
+        <Route exact path='/' element={<AboutMe />} />
       </Routes>
     </Router>
   );
