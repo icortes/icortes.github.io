@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AppBar from './components/AppBar';
 import { ColorModeContext } from './components/ColorMode';
+import Footer from './components/Footer';
 import AboutMe from './pages/AboutMe';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<AboutMe />} />
         </Routes>
+        <Footer />
       </Grid>
     </Router>
   );

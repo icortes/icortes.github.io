@@ -3,7 +3,7 @@ import avatar from '../assets/img/avatar.jpg';
 
 export default function AboutMe(props) {
   return (
-    <Box sx={{ width: '75vw', height: '100vh' }}>
+    <Box sx={{ width: '100vw', height: '100vh' }}>
       <Container maxWidth='md'>
         <Avatar
           alt='Isaac Cortes Hernandez'
