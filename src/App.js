@@ -1,14 +1,10 @@
 import { useTheme, Grid } from '@mui/material';
-import { useContext } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AppBar from './components/AppBar';
-import { ColorModeContext } from './components/ColorMode';
 import Footer from './components/Footer';
 import AboutMe from './pages/AboutMe';
 
 function App() {
-  const theme = useTheme();
-  const colorMode = useContext(ColorModeContext);
 
   return (
     <Router>
