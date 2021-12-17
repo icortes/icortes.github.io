@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AppBar from './components/AppBar';
 import Footer from './components/Footer';
 import AboutMe from './pages/AboutMe';
+import Portfolio from './pages/Portfolio';
 
 function App() {
   const darkTheme = createTheme({
@@ -25,6 +26,7 @@ function App() {
             justifyContent='center'>
             <Routes>
               <Route exact path='/' element={<AboutMe />} />
+              <Route exact path='/portfolio' element={<Portfolio/>} />
             </Routes>
             <Footer />
           </Grid>
