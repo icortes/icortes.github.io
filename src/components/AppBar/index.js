@@ -11,8 +11,14 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { useTheme } from '@mui/material';
 import { ColorModeContext } from '../ColorMode';
+import { Link } from 'react-router-dom';
 
-const pages = ['About Me', 'Portfolio', 'Contact', 'Resume'];
+const pages = [
+  ['About Me', '/'],
+  ['Portfolio', '/portfolio'],
+  ['Contact', '/contact'],
+  ['Resume', '/resume'],
+];
 
 export default function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -59,9 +65,11 @@ export default function ResponsiveAppBar() {
               onClose={handleCloseNavMenu}
               sx={{ display: { xs: 'block', md: 'none' } }}>
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign='center'>{page}</Typography>
-                </MenuItem>
+                <Link to={page[1]} style={{ color: 'inherit', textDecoration: 'none' }}>
+                  <MenuItem key={page[0]} onClick={handleCloseNavMenu}>
+                    <Typography textAlign='center'>{page[0]}</Typography>
+                  </MenuItem>
+                </Link>
               ))}
             </Menu>
           </Box>
@@ -73,16 +81,18 @@ export default function ResponsiveAppBar() {
               flexGrow: 1,
               display: { xs: 'flex', md: 'none' },
             }}>
-            Isaac Cortes Hernandez
+            Isaac C.
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}>
-                {page}
-              </Button>
+              <Link to={page[1]} style={{ textDecoration: 'none' }}>
+                <Button
+                  key={page[0]}
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: 'white', display: 'block' }}>
+                  {page[0]}
+                </Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>
