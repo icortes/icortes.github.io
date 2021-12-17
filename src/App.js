@@ -1,4 +1,4 @@
-import { useTheme, Grid, createTheme, Paper } from '@mui/material';
+import { Grid, createTheme, Paper } from '@mui/material';
 import { ThemeProvider } from '@mui/system';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AppBar from './components/AppBar';
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <Paper elevation={5}>
+      <Paper elevation={24}>
         <Router>
           <AppBar />
           <Grid
