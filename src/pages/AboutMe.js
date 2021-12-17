@@ -1,4 +1,4 @@
-import { Avatar, Container, Grid, Paper, Box, Typography } from '@mui/material';
+import { Avatar, Container, Paper, Box, Typography } from '@mui/material';
 import avatar from '../assets/img/avatar.jpg';
 
 export default function AboutMe(props) {
