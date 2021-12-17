@@ -19,7 +19,7 @@ export default function ToggleColorMode(props) {
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
-        {...props}
+        {props}
       </ThemeProvider>
     </ColorModeContext.Provider>
   );
