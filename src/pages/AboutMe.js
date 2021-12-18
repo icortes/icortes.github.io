@@ -19,7 +19,15 @@ export default function AboutMe(props) {
           <Typography
             variant='body1'
             gutterBottom
-            sx={{ mt: 3, py: 2, px: 2, fontSize: 20, overflow: 'scroll', maxHeight: '425px' }}>
+            sx={{
+              mt: 3,
+              py: 2,
+              px: 2,
+              fontSize: 20,
+              overflow: 'scroll',
+              overflowX: 'hidden',
+              maxHeight: '425px',
+            }}>
             Full stack web developer leveraging customer service and computer
             science background to build a more intuitive user experience on the
             web. Recently earned a certificate in full stack development at UC

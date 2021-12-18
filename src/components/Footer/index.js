@@ -7,6 +7,7 @@ export default function Footer() {
   const footer = {
     flexShrink: 0,
     textAlign: 'center',
+    width: '100%',
   };
 
   const icon = {
