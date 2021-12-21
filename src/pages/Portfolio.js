@@ -13,12 +13,19 @@ export default function Portfolio(props) {
           style={{ textSizeAdjust: 'auto' }}>
           Portfolio
         </Typography>
-        <Grid container spacing={2} direction='row' justifyContent='space-between'>
-          <Grid item xs={5}>
-            {projects.map((project, index) => {
-              return <ProjectCard key={index} project={project} />;
-            })}
-          </Grid>
+        <Grid
+          container
+          spacing={2}
+          direction='row'
+          justifyContent='space-between'
+          sx={{ mt: 1 }}>
+          {projects.map((project, index) => {
+            return (
+              <Grid item sx={12} sm={6} md={6} lg={6}>
+                <ProjectCard key={index} project={project} />
+              </Grid>
+            );
+          })}
         </Grid>
       </Container>
     </Box>

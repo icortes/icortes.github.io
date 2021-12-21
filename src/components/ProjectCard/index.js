@@ -1,4 +1,4 @@
-import GitHub from '@mui/icons-material/GitHub';
+import { GitHub, Web } from '@mui/icons-material';
 import {
   Button,
   Card,
@@ -12,7 +12,7 @@ import {
 export default function ProjectCard({ project }) {
   console.log(project);
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 425, minWidth: 220 }}>
       <CardActionArea href={project.deployed} target='_blank'>
         <CardMedia
           component='img'
@@ -35,14 +35,14 @@ export default function ProjectCard({ project }) {
           color='primary'
           href={project.deployed}
           target='_blank'>
-          See Deployed Site
+          <Web /> <div style={{ marginLeft: '5px' }}>See Deployed Site</div>
         </Button>
         <Button
           size='small'
           color='primary'
           href={project.github}
           target='_blank'>
-          <GitHub /> <text style={{ marginLeft: '5px' }}>Github</text>
+          <GitHub /> <div style={{ marginLeft: '5px' }}>Github</div>
         </Button>
       </CardActions>
     </Card>
