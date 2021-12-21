@@ -4,7 +4,7 @@ import projects from '../db/projects.json';
 
 export default function Portfolio(props) {
   return (
-    <Box sx={{ width: '100vw', height: '100vh' }}>
+    <Box sx={{ width: '100%', height: '100%' }}>
       <Container maxWidth='md'>
         <Typography
           variant='h2'

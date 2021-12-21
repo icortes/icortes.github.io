@@ -15,7 +15,7 @@ function App() {
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <Paper elevation={24} style={{width: '100%'}}>
+      <Paper elevation={24} style={{width: '100%', height: '100%'}}>
         <Router>
           <AppBar />
           <Grid

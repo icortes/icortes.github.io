@@ -16,7 +16,7 @@ export default function ProjectCard({ project }) {
       <CardActionArea href={project.deployed} target='_blank'>
         <CardMedia
           component='img'
-          height='140'
+          height='200'
           image={project.image_path}
           alt={project.alt}
         />

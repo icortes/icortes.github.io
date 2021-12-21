@@ -8,6 +8,8 @@ export default function Footer() {
     flexShrink: 0,
     textAlign: 'center',
     width: '100%',
+    marginTop: '10px',
+    marginBottom: '5px',
   };
 
   const icon = {

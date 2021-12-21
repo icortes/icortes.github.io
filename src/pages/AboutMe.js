@@ -3,7 +3,7 @@ import avatar from '../assets/img/avatar.jpg';
 
 export default function AboutMe(props) {
   return (
-    <Box sx={{ width: '100vw', height: '100vh' }}>
+    <Box sx={{ width: '100%', height: '100%' }}>
       <Container maxWidth='md'>
         <Avatar
           alt='Isaac Cortes Hernandez'
@@ -24,9 +24,6 @@ export default function AboutMe(props) {
               py: 2,
               px: 2,
               fontSize: 20,
-              overflow: 'scroll',
-              overflowX: 'hidden',
-              maxHeight: '400px',
             }}>
             Full stack web developer leveraging customer service and computer
             science background to build a more intuitive user experience on the
