@@ -1,5 +1,6 @@
 import { Box, Container, Typography } from '@mui/material';
 import ProjectCard from '../components/ProjectCard';
+import projects from '../db/projects.json';
 
 export default function Portfolio(props) {
   return (
@@ -12,7 +13,9 @@ export default function Portfolio(props) {
           style={{ textSizeAdjust: 'auto' }}>
           Portfolio
         </Typography>
-        <ProjectCard />
+        {projects.forEach((project) => {
+          <ProjectCard key={project.title} project={project} />;
+        })}
       </Container>
     </Box>
   );
