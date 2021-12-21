@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Grid, Typography } from '@mui/material';
 import ProjectCard from '../components/ProjectCard';
 import projects from '../db/projects.json';
 
@@ -13,9 +13,13 @@ export default function Portfolio(props) {
           style={{ textSizeAdjust: 'auto' }}>
           Portfolio
         </Typography>
-        {projects.forEach((project) => {
-          <ProjectCard key={project.title} project={project} />;
-        })}
+        <Grid container spacing={2} direction='row' justifyContent='space-between'>
+          <Grid item xs={5}>
+            {projects.map((project, index) => {
+              return <ProjectCard key={index} project={project} />;
+            })}
+          </Grid>
+        </Grid>
       </Container>
     </Box>
   );
