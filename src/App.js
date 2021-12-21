@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AppBar from './components/AppBar';
 import Footer from './components/Footer';
 import AboutMe from './pages/AboutMe';
+import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <Paper elevation={24} style={{width: '100%', height: '100%'}}>
+      <Paper elevation={24} style={{ width: '100%', height: '100%' }}>
         <Router>
           <AppBar />
           <Grid
@@ -26,7 +27,8 @@ function App() {
             justifyContent='center'>
             <Routes>
               <Route exact path='/' element={<AboutMe />} />
-              <Route exact path='/portfolio' element={<Portfolio/>} />
+              <Route exact path='/portfolio' element={<Portfolio />} />
+              <Route exact path='/contact' element={<Contact />} />
             </Routes>
             <Footer />
           </Grid>

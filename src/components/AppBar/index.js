@@ -77,7 +77,7 @@ export default function ResponsiveAppBar() {
               flexGrow: 1,
               display: { xs: 'flex', md: 'none' },
             }}>
-            Isaac C.
+            Isaac Cortes Hernandez
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
