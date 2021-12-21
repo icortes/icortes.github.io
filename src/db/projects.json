@@ -1,0 +1,18 @@
+[
+  {
+    "image_path": "../assets/img/handyman.jpg",
+    "alt": "image of handyman website",
+    "title": "Handy Man",
+    "summary": "A user friendly app that connects users to nearby businesses and tradesmen. Imagine doordash but with skilled tradesmen instead of food.",
+    "github": "https://github.com/icortes/Handy-Man",
+    "deployed":"https://handy-man-1024.herokuapp.com/"
+  },
+  {
+    "image_path": "../assets/img/nostalgia.jpg",
+    "alt": "image of nostalgia website",
+    "title": "Nostalgia Generator",
+    "summary": "The Nostalgia Generator is a Javascript-based web application that allows users to search for all media for a given year. They are able to broswe through titles in a simple set of carousels, choosing between learning more about titles of interst or saving interesting titles for later review in their personal List.",
+    "github": "https://github.com/icortes/nostalgia-generator",
+    "deployed": "https://sahhollingsworth.github.io/nostalgia-generator/"
+  }
+]
