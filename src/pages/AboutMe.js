@@ -26,7 +26,7 @@ export default function AboutMe(props) {
               fontSize: 20,
               overflow: 'scroll',
               overflowX: 'hidden',
-              maxHeight: '425px',
+              maxHeight: '400px',
             }}>
             Full stack web developer leveraging customer service and computer
             science background to build a more intuitive user experience on the
