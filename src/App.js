@@ -16,7 +16,7 @@ function App() {
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <Paper elevation={24} style={{ width: '100%', height: '100%' }}>
+      <Paper elevation={24} style={{ width: '100%', height: '100vh', overflow:'auto' }} square>
         <Router>
           <AppBar />
           <Grid
@@ -24,7 +24,7 @@ function App() {
             spacing={0}
             direction='column'
             alignItems='center'
-            justifyContent='center'>
+            justifyContent='space-between'>
             <Routes>
               <Route exact path='/' element={<AboutMe />} />
               <Route exact path='/portfolio' element={<Portfolio />} />

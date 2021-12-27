@@ -9,7 +9,7 @@ export default function Footer() {
     textAlign: 'center',
     width: '100%',
     marginTop: '10px',
-    marginBottom: '5px',
+    marginBottom: '10px',
   };
 
   const icon = {
