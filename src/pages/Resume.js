@@ -8,6 +8,7 @@ import {
   ListSubheader,
   Typography,
 } from '@mui/material';
+import proficiencies from '../db/proficiencies.json';
 
 export default function Resume(props) {
   return (
@@ -25,7 +26,7 @@ export default function Resume(props) {
           columnSpacing={{ xs: 1, sm: 1, md: 1 }}
           direction={'row'}
           justifyContent={'space-evenly'}>
-          <Grid item sx={12} sm={6} md={6}>
+          <Grid item xs={12} sm={6} md={6}>
             <List
               sx={{
                 mt: 3,
@@ -35,12 +36,16 @@ export default function Resume(props) {
               subheader={
                 <ListSubheader>Front-end Proficiencies</ListSubheader>
               }>
-              <ListItem>
-                <ListItemText primary='HTML5' />
-              </ListItem>
+              {proficiencies[0]['front-end'].map((proficiency, index) => {
+                return (
+                  <ListItem key={index}>
+                    <ListItemText primary={proficiency} />
+                  </ListItem>
+                );
+              })}
             </List>
           </Grid>
-          <Grid item sx={12} sm={6} md={6}>
+          <Grid item xs={12} sm={6} md={6}>
             <List
               sx={{
                 mt: 3,
@@ -48,9 +53,13 @@ export default function Resume(props) {
                 bgcolor: 'background.paper',
               }}
               subheader={<ListSubheader>Back-end Proficiencies</ListSubheader>}>
-              <ListItem>
-                <ListItemText primary='HTML5' />
-              </ListItem>
+              {proficiencies[0]['back-end'].map((proficiency, index) => {
+                return (
+                  <ListItem key={index}>
+                    <ListItemText primary={proficiency} />
+                  </ListItem>
+                );
+              })}
             </List>
           </Grid>
         </Grid>

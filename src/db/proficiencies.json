@@ -17,7 +17,8 @@
       "MySQL, Sequelize",
       "MongoDB, Mongoose",
       "REST",
-      "GraphQL"
+      "GraphQL",
+      "Apollo Server"
     ]
   }
 ]
