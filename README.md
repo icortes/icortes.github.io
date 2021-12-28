@@ -11,14 +11,14 @@ This is my personal portfolio using React and Material UI for styling.
 
 ## Deployed Link
 
-* [See Live Site](#)
+* [See Live Site](https://icortes.github.io/)
 
 
 ## Authors
 
 * **Isaac Cortes Hernandez** 
 
-- [Link to Portfolio Site](https://icortes.github.io/my-first-portfolio/)
+- [Link to Portfolio Site](https://icortes.github.io/)
 - [Link to Github](https://github.com/icortes)
 - [Link to LinkedIn](https://www.linkedin.com/in/cortes-isaac)
 
