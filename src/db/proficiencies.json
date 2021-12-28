@@ -1,0 +1,23 @@
+[
+  {
+    "front-end": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "jQuery",
+      "responsive design",
+      "React",
+      "Bootstrap",
+      "Material UI"
+    ],
+    "back-end": [
+      "APIs",
+      "Node",
+      "Express",
+      "MySQL, Sequelize",
+      "MongoDB, Mongoose",
+      "REST",
+      "GraphQL"
+    ]
+  }
+]
