@@ -2,6 +2,7 @@ import {
   Box,
   Container,
   Grid,
+  Link,
   List,
   ListItem,
   ListItemText,
@@ -18,12 +19,10 @@ export default function Resume(props) {
           Resume
         </Typography>
         <Typography component={'div'} variant='h5' sx={{ mt: 3 }}>
-          Download my
-          <a
-            href='https://docs.google.com/document/d/1L1-RzLbLqajKSWQK1C3RIttFFxXrM2WESSy0VPRIIBY/edit?usp=sharing'
-            style={{ textDecoration: 'none', color: 'black' }}>
+          Download my{' '}
+          <Link href='https://docs.google.com/document/d/1L1-RzLbLqajKSWQK1C3RIttFFxXrM2WESSy0VPRIIBY/edit?usp=sharing' target={'_blank'}>
             resume
-          </a>
+          </Link>
         </Typography>
         <Grid
           container
