@@ -10,6 +10,7 @@ import {
   Typography,
 } from '@mui/material';
 import proficiencies from '../db/proficiencies.json';
+import resume from '../assets/doc/IsaacCortesHernResume.pdf';
 
 export default function Resume(props) {
   return (
@@ -20,7 +21,7 @@ export default function Resume(props) {
         </Typography>
         <Typography component={'div'} variant='h5' sx={{ mt: 3 }}>
           Download my{' '}
-          <Link href='https://docs.google.com/document/d/1L1-RzLbLqajKSWQK1C3RIttFFxXrM2WESSy0VPRIIBY/edit?usp=sharing' target={'_blank'}>
+          <Link href={resume} target={'_blank'}>
             resume
           </Link>
         </Typography>
