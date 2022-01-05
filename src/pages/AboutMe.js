@@ -25,18 +25,21 @@ export default function AboutMe(props) {
               px: 2,
               fontSize: 20,
             }}>
-            Full stack web developer leveraging customer service and computer
-            science background to build a more intuitive user experience on the
-            web. Recently earned a certificate in full stack development at UC
-            Berkeley Extension, with newly developed skills in JavaScript, CSS,
-            React.js, and responsive web design. Known as an innovative problem
-            solver passionate about developing apps, with a focus on writing
-            quality and professional code. With each project, my aim is to best
-            engage my audience for an impactful user experience. I applied
-            aspects of UX and agile development in a recent project. I worked on
-            a team of four to develop a single-page MERN app that helps
-            communities organize, plan, and create events for community building
-            rather than concerts. I'm excited to leverage my skills as part of a
+            Full stack web developer leveraging a customer service background to
+            build a more intuitive user experience on the web. Holds a
+            certificate in full stack development at UC Berkeley Extension, with
+            newly developed skills in JavaScript, CSS, Node.js, React.js, and
+            responsive web design. Known as an innovative problem solver,
+            mentor, and great communicator who is passionate about developing
+            apps, with a focus on writing quality and professional code. With
+            each project, my aim is to best engage my audience for an impactful
+            user experience. I applied aspects of UX and agile development in a
+            recent project. I worked on a team of three to develop a single-page
+            MERN app called Happening that helps communities organize, plan, and
+            create events for community building. In a different project,
+            Nostalgia Generator, with a team of four, I created all the
+            javascript logic with comments to help my team understand the code I
+            had written. I’m excited to leverage my skills as part of a
             fast-paced, quality-driven team to build better experiences on the
             web.
           </Typography>
