@@ -17,7 +17,7 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <Paper
         elevation={24}
-        style={{ width: '100%', height: '100%', overflow: 'auto' }}
+        style={{ width: '100%', height: '100%'}}
         square>
         <Router>
           <AppBar />
