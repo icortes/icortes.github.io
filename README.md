@@ -2,7 +2,7 @@
 
 This is my personal portfolio using React and Material UI for styling.
 
-![resume page](assets/img/resume-page.jpg)
+![resume page](assets/img/home-page.png)
 ## Built With
 
 * [React](https://reactjs.org/docs/getting-started.html)
@@ -30,3 +30,4 @@ This project is licensed under the MIT License
 
 * React documentation
 * MUI documentation
+* stackoverflow
