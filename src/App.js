@@ -3,10 +3,8 @@ import { ThemeProvider } from '@mui/system';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AppBar from './components/AppBar';
 import Footer from './components/Footer';
-import AboutMe from './pages/AboutMe';
-import Contact from './pages/Contact';
-import Portfolio from './pages/Portfolio';
-import Resume from './pages/Resume';
+import HomePage from './pages/HomePage';
+
 
 function App() {
   const darkTheme = createTheme({
@@ -19,7 +17,7 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <Paper
         elevation={24}
-        style={{ width: '100%', height: '100vh', overflow: 'auto' }}
+        style={{ width: '100%', height: '100%', overflow: 'auto' }}
         square>
         <Router>
           <AppBar />
@@ -30,10 +28,7 @@ function App() {
             alignItems='center'
             justifyContent='space-between'>
             <Routes>
-              <Route exact path='/' element={<AboutMe />} />
-              <Route exact path='/portfolio' element={<Portfolio />} />
-              <Route exact path='/contact' element={<Contact />} />
-              <Route exact path='/resume' element={<Resume />} />
+              <Route exact path='/' element={<HomePage />} />
             </Routes>
             <Footer />
           </Grid>
