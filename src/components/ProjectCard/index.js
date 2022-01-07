@@ -10,9 +10,15 @@ import {
 } from '@mui/material';
 
 export default function ProjectCard({ project }) {
-  console.log(project);
   return (
-    <Card sx={{ maxWidth: 425, minWidth: 220 }}>
+    <Card
+      sx={{ maxWidth: 425, minWidth: 220 }}
+      style={{
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+      }}>
       <CardActionArea href={project.deployed} target='_blank'>
         <CardMedia
           component='img'
