@@ -30,13 +30,15 @@ export default function ProjectCard({ project }) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button
-          size='small'
-          color='primary'
-          href={project.deployed}
-          target='_blank'>
-          <Web /> <div style={{ marginLeft: '5px' }}>See Deployed Site</div>
-        </Button>
+        {project.deployed ? (
+          <Button
+            size='small'
+            color='primary'
+            href={project.deployed}
+            target='_blank'>
+            <Web /> <div style={{ marginLeft: '5px' }}>See Deployed Site</div>
+          </Button>
+        ) : null}
         <Button
           size='small'
           color='primary'

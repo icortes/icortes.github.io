@@ -36,7 +36,8 @@
     "alt": "insomnia api call to back-end",
     "title": "E-Commerce Back End",
     "summary": "This is an example of a RESTful API. You can read, create, update and delete data with this e-commerce back end API. It is using Express.js with Sequelize to intereact with a MySQL database.",
-    "github": "https://github.com/icortes/e-commerce-back-end"
+    "github": "https://github.com/icortes/e-commerce-back-end",
+    "deployed": null
   },
   {
     "image_path": "https://github.com/icortes/redux-store/blob/main/assets/img/22-state-homework-demo-02.gif?raw=true",
