@@ -19,7 +19,9 @@ export default function ProjectCard({ project }) {
         flexDirection: 'column',
         justifyContent: 'space-between',
       }}>
-      <CardActionArea href={project.deployed} target='_blank'>
+      <CardActionArea
+        href={project.deployed ? project.deployed : project.github}
+        target='_blank'>
         <CardMedia
           component='img'
           height='200'
