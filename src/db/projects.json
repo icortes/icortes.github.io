@@ -14,5 +14,36 @@
     "summary": "The Nostalgia Generator is a Javascript-based web application that allows users to search for all media for a given year. They are able to browse through titles in a simple set of carousels, choosing between learning more about titles of interst or saving interesting titles for later review in their personal List.",
     "github": "https://github.com/icortes/nostalgia-generator",
     "deployed": "https://sahhollingsworth.github.io/nostalgia-generator/"
+  },
+  {
+    "image_path": "https://github.com/icortes/note-taker/blob/main/assets/images/gif.gif?raw=true",
+    "alt": "gif of note taker",
+    "title": "Note Taker",
+    "summary": "This is a note taking app that creates, saves, and deletes your notes. The app is using Express.js back end and will save and retrieve note data from a JSON file.",
+    "github": "https://github.com/icortes/note-taker",
+    "deployed": "https://evening-temple-99179.herokuapp.com/"
+  },
+  {
+    "image_path": "https://github.com/icortes/book-search-engine/blob/main/assets/images/21-mern-homework-demo-01.gif?raw=true",
+    "alt": "gif of book search engine",
+    "title": "Book Search Engine",
+    "summary": "The Book Search Engine has been converted from using a RESTful API to a GraphQL API built with Apollo Server. It lets the user sign up and log in to save books they query. It is using the Google Books API in the back end and serving it up with GraphQL to the front end.",
+    "github": "https://github.com/icortes/book-search-engine",
+    "deployed": "https://sheltered-brook-96875.herokuapp.com/"
+  },
+  {
+    "image_path": "https://github.com/icortes/e-commerce-back-end/blob/main/assets/images/Screenshot.jpg?raw=true",
+    "alt": "insomnia api call to back-end",
+    "title": "E-Commerce Back End",
+    "summary": "This is an example of a RESTful API. You can read, create, update and delete data with this e-commerce back end API. It is using Express.js with Sequelize to intereact with a MySQL database.",
+    "github": "https://github.com/icortes/e-commerce-back-end"
+  },
+  {
+    "image_path": "https://github.com/icortes/redux-store/blob/main/assets/img/22-state-homework-demo-02.gif?raw=true",
+    "alt": "gif of shop-shop page",
+    "title": "Shop-Shop Redux Store",
+    "summary": "This application original used global state using React's Constext API. It is now refactored to use Redux while still maintaining full functionality.",
+    "github": "https://github.com/icortes/redux-store",
+    "deployed": "https://whispering-brushlands-70963.herokuapp.com/"
   }
 ]
