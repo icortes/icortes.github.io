@@ -11,7 +11,7 @@ import {
 
 export default function Resume({ proficiencies, resume }) {
   return (
-    <Container className='Resume'>
+    <Container id='resume'>
       <Typography component={'div'} variant='h2' sx={{ mt: 5 }}>
         Resume
       </Typography>

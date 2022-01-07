@@ -9,13 +9,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import { Link } from 'react-router-dom';
 
 const pages = [
-  ['About Me', '/'],
-  ['Portfolio', '/portfolio'],
-  ['Contact', '/contact'],
-  ['Resume', '/resume'],
+  ['About Me', '#about-me'],
+  ['Portfolio', '#portfolio'],
+  ['Contact', '#contact'],
+  ['Resume', '#resume'],
 ];
 
 export default function ResponsiveAppBar() {
@@ -61,11 +60,13 @@ export default function ResponsiveAppBar() {
               onClose={handleCloseNavMenu}
               sx={{ display: { xs: 'block', md: 'none' } }}>
               {pages.map((page) => (
-                <Link to={page[1]} style={{ color: 'inherit', textDecoration: 'none' }}>
+                <a
+                  href={page[1]}
+                  style={{ color: 'inherit', textDecoration: 'none' }}>
                   <MenuItem key={page[0]} onClick={handleCloseNavMenu}>
                     <Typography textAlign='center'>{page[0]}</Typography>
                   </MenuItem>
-                </Link>
+                </a>
               ))}
             </Menu>
           </Box>
@@ -81,14 +82,14 @@ export default function ResponsiveAppBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Link to={page[1]} style={{ textDecoration: 'none' }}>
+              <a href={page[1]} style={{ textDecoration: 'none' }}>
                 <Button
                   key={page[0]}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: 'white', display: 'block' }}>
                   {page[0]}
                 </Button>
-              </Link>
+              </a>
             ))}
           </Box>
         </Toolbar>

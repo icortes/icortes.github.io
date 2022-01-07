@@ -3,7 +3,7 @@ import avatar from '../../assets/img/avatar.jpg';
 
 export default function AboutMe(props) {
   return (
-    <Container className='about-me'>
+    <Container id='about-me'>
       <Avatar
         alt='Isaac Cortes Hernandez'
         src={avatar}

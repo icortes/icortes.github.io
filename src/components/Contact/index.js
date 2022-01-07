@@ -12,7 +12,7 @@ import {
 
 export default function Contact(props) {
   return (
-    <Container className='contact'>
+    <Container id='contact'>
       <Typography
         variant='h2'
         component={'div'}

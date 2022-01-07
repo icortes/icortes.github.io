@@ -2,7 +2,7 @@ import { Container, Grid, Typography } from '@mui/material';
 
 export default function Portfolio({projects, ProjectCard}) {
   return (
-    <Container className='portfolio'>
+    <Container id='portfolio'>
       <Typography
         variant='h2'
         component={'div'}
