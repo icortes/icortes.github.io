@@ -10,7 +10,7 @@ import Resume from '../components/Resume';
 
 export default function HomePage(props) {
   return (
-    <Box sx={{ width: '100%', height: 'auto' }}>
+    <Box sx={{ mt: 8,width: '100%', height: 'auto' }}>
       <Container maxWidth='md'>
         <AboutMe />
         <Portfolio projects={projects} ProjectCard={ProjectCard} />
