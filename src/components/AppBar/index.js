@@ -62,8 +62,9 @@ export default function ResponsiveAppBar() {
               {pages.map((page) => (
                 <a
                   href={page[1]}
+                  key={page[0]}
                   style={{ color: 'inherit', textDecoration: 'none' }}>
-                  <MenuItem key={page[0]} onClick={handleCloseNavMenu}>
+                  <MenuItem onClick={handleCloseNavMenu}>
                     <Typography textAlign='center'>{page[0]}</Typography>
                   </MenuItem>
                 </a>
@@ -82,9 +83,11 @@ export default function ResponsiveAppBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <a href={page[1]} style={{ textDecoration: 'none' }}>
+              <a
+                href={page[1]}
+                key={page[0]}
+                style={{ textDecoration: 'none' }}>
                 <Button
-                  key={page[0]}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: 'white', display: 'block' }}>
                   {page[0]}

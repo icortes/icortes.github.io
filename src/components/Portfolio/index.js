@@ -18,8 +18,8 @@ export default function Portfolio({projects, ProjectCard}) {
         sx={{ mt: 1 }}>
         {projects.map((project, index) => {
           return (
-            <Grid item sx={12} sm={6} md={6} lg={6}>
-              <ProjectCard key={index} project={project} />
+            <Grid item sx={12} sm={6} md={6} lg={6} key={index}>
+              <ProjectCard project={project} />
             </Grid>
           );
         })}
